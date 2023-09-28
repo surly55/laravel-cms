@@ -1,0 +1,8 @@
+namespace App;
+
+use Jenssegers\Mongodb\Eloquent\Model;
+
+class MongoDBModel extends Model
+{
+    protected $collection = 'collection-name';
+}
