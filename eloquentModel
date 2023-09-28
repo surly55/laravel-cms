@@ -2,17 +2,18 @@ use App\MongoDBModel;
 
 // Create a new document
 $item = new MongoDBModel([
-    'name' => 'Sample Item',
-    'price' => 19.99,
+    'name' => 'Sample Name',
+    'description' => 'Sample Description',
+    'age' => 31,
 ]);
 $item->save();
 
 // Retrieve documents
-$items = MongoDBModel::where('price', '>', 10)->get();
+$items = MongoDBModel::where('age', '>', 10)->get();
 
 // Update a document
 $item = MongoDBModel::find(1);
-$item->price = 24.99;
+$item->age = 32;
 $item->save();
 
 // Delete a document
