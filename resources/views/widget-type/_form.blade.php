@@ -1,0 +1,3 @@
+{!! input('name', 'text', isset($widgetType->name) ? $widgetType->name : '', 'Name', [ 'tabindex' => 1 ]) !!}
+{!! input('uri', 'text', isset($widgetType->uri) ? $widgetType->uri : '', 'URI', [ 'tabindex' => 2 ]) !!}
+{!! textarea('description', isset($widgetType->description) ? $widgetType->description : '', 'Description', 3, null, [ 'placeholder' => 'Short description (optional)', 'tabindex' => 3 ]) !!}
